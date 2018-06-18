@@ -72,6 +72,10 @@ html, body {
   font-size:20px;
   padding:13px 17px;
 }
+.chat-box-header .chat-options{
+  float: right!important;
+  width: 100%!important;
+}
 .chat-box-header img {
   display: inline-block!important;
   width: 35px;
