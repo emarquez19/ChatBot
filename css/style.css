@@ -45,15 +45,19 @@ html, body {
 .chat-box {
   display:none;
   background: #efefef;
-  position:fixed;
+  position:absolute;
   right:30px;
   bottom:50px;  
   width:350px;
   max-width: 85vw;
+  height:80vh;
   max-height:100vh;
   border-radius:5px;  
 /*   box-shadow: 0px 5px 35px 9px #464a92; */
   box-shadow: 0px 5px 35px 9px #ccc;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .chat-box-toggle {
   padding-left: 5px!important;
@@ -68,6 +72,8 @@ html, body {
   margin-right: 5px;
 }
 .chat-box-header {
+  flex: 0 1 45px;
+  position: relative;
   background: rgb(243, 0, 61);
   height:61px;
   border-top-left-radius:5px;
@@ -105,9 +111,10 @@ html, body {
   margin-top: -3px;
 }
 .chat-box-body {
+  flex: 1 1 auto;
   position: relative;  
-  height:370px;  
-  height:auto;
+  /* height:370px;  
+  height:auto; */
   border-bottom:1px solid #ccc;  
   border-left:1px solid #ccc;  
   border-right:1px solid #ccc;  

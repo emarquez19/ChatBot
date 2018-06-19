@@ -119,15 +119,6 @@ $(function() {
     }
   });
 
-  // Posicion Libre
-  // $("#position-free").click(function() {
-  //   clearPositionLog(3);
-  //   $("#chat-box").toggleClass('draggable-box');
-  //   setTimeout (function (){
-  //     Draggable.create('.draggable-box');
-  //   },100);
-  // });
-
   // Pantalla Completa
   $("#expand-box").click(function() {
     clearPositionLog(4);
