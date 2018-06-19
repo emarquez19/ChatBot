@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Tpl</title>
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css'>
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   <!--Hoja de Estilos-->
   <link rel="stylesheet" href="css/style.css">
@@ -16,20 +20,21 @@
     <p>Message send and scroll to bottom enabled</p>
   </div> 
   <div id="body"> 
+
     <div id="chat-circle" class="btn btn-raised">
         <div id="chat-overlay"></div>
         <i class="material-icons">comment</i>
     </div>
 
-    <div class="chat-box">
+    <div class="chat-box" id="chat-box">
       <div class="chat-box-header">
         <img src="img/android.svg">
-        Chat
+        
         <span class="chat-options">
-          <span class="chat-box-toggle"><i class="material-icons">first_page</i></span>
-          <span class="chat-box-toggle"><i class="material-icons">last_page</i></span>
-          <span class="chat-box-toggle"><i class="material-icons">open_with</i></span>
-          <span class="chat-box-toggle"><i class="material-icons">launch</i></span>
+          <span id="pin-left" data-toggle="tooltip" title="Fijar a la Izquierda"><i class="material-icons">first_page</i></span>
+          <span id="pin-right" data-toggle="tooltip" title="Fijar a la Derecha"><i class="material-icons">last_page</i></span>
+          <!-- <span id="position-free" data-toggle="tooltip" title="Posición Libre"><i class="material-icons">open_with</i></span> -->
+          <span id="expand-box" data-toggle="tooltip" title="Ver en pantalla completa"><i class="material-icons">launch</i></span>
           <span class="chat-box-toggle"><i class="material-icons">close</i></span>
         </span>
         
@@ -48,12 +53,11 @@
         </form>      
       </div>
     </div>
-      
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    </div>
   </div>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script  src="js/index.js"></script>
 
 </body>
