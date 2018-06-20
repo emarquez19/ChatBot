@@ -132,12 +132,31 @@ html, body {
   position: absolute;
   z-index: -1;   
 }
+.chat-input {
+  background: #f4f7f9;
+  width:100%; 
+  /* flex: 0 1 40px; */
+  position:relative;
+  height:47px;  
+  padding-top:3px;
+  /* padding-right:50px;
+  padding-bottom:10px;
+  padding-left:15px; */
+  border:none;
+  resize:none;
+  outline:none;
+  /* border:1px solid #ccc; */
+  color:#888;
+  border-top:none;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;
+  overflow:hidden;  
+}
 #chat-input {
   background: #f4f7f9;
   width:100%; 
-  position:relative;
   height:47px;  
-  padding-top:10px;
+  padding-top:4px;
   padding-right:50px;
   padding-bottom:10px;
   padding-left:15px;
@@ -176,11 +195,16 @@ html, body {
   border-radius:50%;
   color:rgb(243, 0, 61);
   width:35px;
-  height:35px;  
+  height:35px; 
+  z-index: 9999;
+  transition: background .2s ease;
 }
+  
 .chat-logs {
   padding:15px; 
-  height:370px;
+  height: 70vh;
+  padding-bottom: 5vh!important;
+  width: 100%;
   overflow-y:scroll;
 }
 .chat-logs::-webkit-scrollbar-track
@@ -200,9 +224,9 @@ html, body {
 
 
 @media only screen and (max-width: 500px) {
-   .chat-logs {
+   /* .chat-logs {
         height:40vh;
-    }
+    } */
 }
 
 .chat-msg.user > .msg-avatar img {
